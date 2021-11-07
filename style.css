@@ -4,9 +4,65 @@
 }
 
 html,
-body {
+body,
+h1,
+h2 {
   margin: 0;
   padding: 0;
 }
 
 /* Add styles here! */
+:root {
+  --green: hsl(160deg, 100%, 30%);
+  --gold-lighter: hsl(45deg, 100%, 50%);
+  --gold-darker: hsl(45deg, 100%, 40%);
+  --gray-black: hsl(0deg, 0%, 0%);
+  --gray-very-dark: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --gray-white: hsl(0deg, 0%, 100%);
+}
+
+body {
+  min-height: 100%;
+  background-color: var(--gray-medium);
+}
+
+header {
+  background-color: var(--gray-white);
+  border-block-end: 4px solid var(--gray-dark);
+  margin-block-end: 36px;
+}
+
+.max-width-wrapper {
+  max-width: 560px;
+  margin-inline: auto;
+}
+
+.intro-chunk {
+  padding: 16px;
+  max-width: 300px;
+}
+
+.intro-chunk > .title {
+  margin-block-end: 2rem;
+}
+
+.intro-chunk strong {
+  color: var(--green);
+}
+
+.card {
+  background-color: var(--gray-white);
+  padding: 8px 16px 16px;
+  border-block-end: 4px solid var(--gray-dark);
+}
+
+.indented-heading {
+  background-color: var(--gold-lighter);
+  border-block-end: 4px solid var(--gold-darker);
+  width: fit-content;
+  padding: 12px 24px;
+  margin-inline-start: -27px;
+}
